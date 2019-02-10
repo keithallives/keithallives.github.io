@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home | KS</title>
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar">
+      <span class="open-slide">
+        <a href="#" onclick="openSideMenu()">
+          <svg width="25" height="25">
+            <path d="M0, 5 30,5" stroke="#fff" stroke-width="5" />
+            <path d="M0, 14 30,14" stroke="#fff" stroke-width="5" />
+            <path d="M0, 23 30,23" stroke="#fff" stroke-width="5" />
+          </svg>
+        </a>
+      </span>
+      <div class="navbar-brand">
+        <a href="/"><strong>K</strong>eithallive<strong>S</strong></a>
+      </div>
+      <ul class="navbar-nav">
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+      <a href="/">Home</a>
+      <a href="/books.html">Books</a>
+      <a href="/about.html">About</a>
+    </div>
+
+    <main class="main-content">
+      <div class="container">
+        <article class="post">
+          <div class="post-header">
+            <h1 class="post-title">Static & Dynamic Websites</h1>
+            <span class="post-date">February 09, 2019</span>
+          </div>
+          <div class="post-content">
+            <p>
+              In the early days of the internet all web pages were static: they
+              displayed the same content to every user. Over time dynamic,
+              database-backed websites emerged powered by programming languages
+              like Python, Ruby, PHP, and Java emerged.
+            </p>
+            <h2>Static Website</h2>
+            <p>
+              It is a very simple and basic website. It doesn't have much
+              functionality to it. We use HTML, CSS and vanilla JS to build a
+              static website.
+            </p>
+            <p>
+              Let's take a look at the Pros & Cons:
+            </p>
+            <h3>Pros:</h3>
+            <ul>
+              <li>fast — no lengthy load times when displaying the page</li>
+              <li>
+                cheap—often cheaper to host static files on Netlify, S3, etc
+                than a hosted environment
+              </li>
+              <li>Lsimpler for a developer to setup</li>
+            </ul>
+            <h3>Cons:</h3>
+            <ul>
+              <li>
+                updates-requires a developer to update content, not a nice CMS
+                as provided by WordPress and others
+              </li>
+            </ul>
+            <h2>Dynamic Website</h2>
+            <p>
+              This website is simply a static website with a twist. Meaning a
+              lot of things is going on behind the scene. We use web framework
+              such as Django(Python), Laravel(PHP) and Express(JS) to build a
+              dynamic website.
+            </p>
+            <p>
+              So, Here are the Pros & Cons:
+            </p>
+            <h3>Pros:</h3>
+            <ul>
+              <li>
+                dynamic content generated for each user
+              </li>
+              <li>
+                easy to update with a CMS like Wordpress
+              </li>
+
+              <li>
+                more powerful with features like login, payments, etc.
+              </li>
+            </ul>
+            <h3>Cons:</h3>
+            <ul>
+              <li>
+                expensive—setting up, maintaining, and scaling a database is
+                costly
+              </li>
+              <li>
+                complex—much more steps involved to setup and deploy vs a static
+                site
+              </li>
+            </ul>
+            <h2>The Bottomline</h2>
+            <p>
+              If you need features like login, payments, etc. then it's going to
+              be a dynamic website. But if you just need a simple website for
+              blogging or for promoting your business online, you might consider
+              setting up a static website.
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer id="main-footer">
+      <p>Copyright &copy; 2019</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
