@@ -120,6 +120,11 @@ h5 {
   padding-top: 1.5rem;
 }
 
+.post-content p,
+li {
+  line-height: 1.5rem;
+}
+
 /* About Section */
 img.headshot {
   display: flex;
